@@ -8,10 +8,13 @@ In this project, I focused on JavaScript. I added functionality to my online sto
 3. Credits
 
 ## Installation Guide
-In the root of the repository, click on the green button clone/download. Here just download the ZIP file.
+In the root of the repository, click on the green button clone/download.
 
 ## Usage Instructions
+On the landing page, you can select a product that you'd like to purchase. Once you have filled up your cart you can select 'View Shopping Cart'. You have the option to use the promo code called 'PROMO' to save R50 off your order. If you select delivery you have the options to fill in your details so that the items can be delivered to you or you have the option to collect the items at the collection address.
 
+![](shoppingcartscreenshot2.png)
+![](shoppingcartscreenshot.png)
 
 ## Credits
 
