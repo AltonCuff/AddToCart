@@ -1,0 +1,1594 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Peugeot - Colour UI</title>
+        <link rel="shortcut icon" href="urban.png" type="image/x-icon">
+        <link href="css/custom.css" rel="stylesheet" type="text/css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <style type="text/css">
+
+        /* colour picker */
+
+        .img-container {
+    width: 100%;
+    height: 100%;
+}
+
+/*  */
+/* end */
+.top {
+    position: absolute;
+    z-index: 1000;
+    height: 5px;
+}
+
+.dcon {
+    background: whitesmoke;
+    width: 300px;
+    height: 600px;
+}
+
+.img-container {
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.card span {
+    position: absolute;
+    top: 0;
+    left: calc(100% / 13 * var(--i));
+    width: calc(100% / 13);
+    height: 100%;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.card img:nth-child(2),
+.card span:hover + img {
+    opacity: 1;
+}
+
+/* card silver */
+.card-plat {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.card-plat span {
+    position: absolute;
+    top: 0;
+    left: calc(100% / 13 * var(--i));
+    width: calc(100% / 13);
+    height: 100%;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.card-plat img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.card-plat img:nth-child(2),
+.card-plat span:hover + img {
+    opacity: 1;
+}
+
+/* card blue */
+.card-white {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.card-white span {
+    position: absolute;
+    top: 0;
+    left: calc(100% / 13 * var(--i));
+    width: calc(100% / 13);
+    height: 100%;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.card-white img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.card-white img:nth-child(2),
+.card-white span:hover + img {
+    opacity: 1;
+}
+
+/* card black */
+.card-blue {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.card-blue span {
+    position: absolute;
+    top: 0;
+    left: calc(100% / 13 * var(--i));
+    width: calc(100% / 13);
+    height: 100%;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.card-blue img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.card-blue img:nth-child(2),
+.card-blue span:hover + img {
+    opacity: 1;
+}
+
+/* card red */
+.card-red {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.card-red span {
+    position: absolute;
+    top: 0;
+    left: calc(100% / 13 * var(--i));
+    width: calc(100% / 13);
+    height: 100%;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.card-red img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.card-red img:nth-child(2),
+.card-red span:hover + img {
+    opacity: 1;
+}
+
+/* card black */
+.card-black {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.card-black span {
+    position: absolute;
+    top: 0;
+    left: calc(100% / 13 * var(--i));
+    width: calc(100% / 13);
+    height: 100%;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.card-black img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.card-black img:nth-child(2),
+.card-black span:hover + img {
+    opacity: 1;
+}
+
+/* card black */
+.card-black {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.card-silver span {
+    position: absolute;
+    top: 0;
+    left: calc(100% / 13 * var(--i));
+    width: calc(100% / 13);
+    height: 100%;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.card-silver img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.card-silver img:nth-child(2),
+.card-silver span:hover + img {
+    opacity: 1;
+}
+
+/*color-swatch */
+.blockz {
+    width: 300px;
+    height: 120px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    background-image: url('img/COLOURBOX@2x.png');
+}
+
+.logoo {
+    position: absolute;
+    z-index: 999;
+    width: 300px;
+}
+
+.color-swatch {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translate(-45.5%,-92%);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 300px;
+    display: flex;
+    
+  }
+  
+
+  li > img {
+    width: 32px;
+    height: 100%;
+    opacity: 0;
+  }
+  
+  li {
+    display: flex;
+    padding: 0px;
+    margin-left: 8px;
+    opacity: 1;
+    float: left;
+  }
+  
+  li a:hover {
+    background-color: #111111;
+  }
+  /**/
+/*  */
+        /*  */
+      body .container
+      {
+          font-family: 'Poppins', sans-serif;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          -o-user-select: none;
+          user-select: none;
+      }
+
+      #sha_app
+      {
+          padding: 20px 7px !important;
+      }
+
+      p {
+        margin: 0 !important;
+        font-size: 15px;
+        line-height: 1.3;
+      }
+
+      #sha_button_list {
+        margin-top: -15px;
+      }
+
+      #sha_button_list ul
+      {
+          padding: 0;
+      }
+
+      #sha_button_list ul li
+      {
+          list-style: none;
+          float: left;
+          width: 20%;
+          text-align: center;
+          padding: 0px 10px;
+       }
+
+       #sha_button_list ul li:first-child
+       {
+          margin-left: -5px;
+       }
+
+      #sha_button_list ul li span
+      {
+          display: inline-block;
+          width: 50px;
+          height: 50px;
+          line-height: 50px;
+          border-radius: 15px;
+      }
+
+      .span-off {
+          width: 200px !important;
+      }
+
+      #sha_button_list ul li.off span
+      {
+          position: absolute;
+          left: 50%;
+          transform: translate(-50%);
+          color: #000000; 
+      }
+      
+      .home-button img {
+          width: 110px;
+          margin-top: 15px;
+      }
+
+      #sha_button_list ul li.on span
+      {
+          color: #31456A;
+          box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                      inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                      -0.5px -0.5px 0 rgba(255,255,255,1),
+                      0.5px 0.5px 0 rgba(0,0,0,0.15),
+                      0px 12px 10px -10px rgba(0,0,0,0.05);
+          border: 1px solid rgba(0,0,0,0.01);
+      }
+
+      #sha_temp_body
+      {
+          text-align: center;
+          margin-top: 10px;
+      }
+
+      #sha_temp_body .sha_temp
+      {
+          position: relative;
+          display: inline-block;
+          width: 200px;
+          height: 200px;
+          border-radius: 100%;
+          text-align: center;
+          box-shadow: 30px 30px 30px -10px rgba(0,0,0,0.1),
+                      -30px -30px 30px -10px rgba(255,255,255,0.4),
+                      -0.5px -0.5px 0 rgba(255,255,255,1),
+                      0.5px 0.5px 0 rgba(0,0,0,0.02);
+      }
+
+      .sha_temp img {
+          width: 154px;
+          margin-top: 40px;
+      }
+
+      #sha_temp_body .sha_temp > span
+      {
+          position: relative;
+          display: inline-block;
+          top: 50%;
+          transform: translateY(-60%);
+      }
+
+      #sha_temp_body .sha_temp > span > span.temp-data
+      {
+          font-size: 60px;
+          font-weight: 600;
+          display: block;
+          color: rgba(49,69,106,1);
+      }
+
+      #sha_temp_body .sha_temp > span > span.temp-data sup
+      {
+          position: absolute;
+          font-size: 15px;
+          font-weight: 500;
+          top: 24%;
+      }
+
+      #sha_temp_meta
+      {
+          margin-top: 90px;
+          padding: 20px;
+      }
+
+      .sha_tile > div
+      {
+          position: relative;
+          background-color: rgba(255,255,255,1);
+          border-radius: 5px;
+          padding: 12px 15px;
+          box-shadow: 15px 5px 20px -10px rgba(0,0,0,0.15),
+                      -15px -5px 20px -10px rgba(255,255,255,0.8);
+      }
+
+      .sha_tile
+      {
+          display: block;
+          font-weight: 400;
+          color: #000000;
+          max-width: max-content;
+      }
+
+      .sha_tile.user {
+        margin-left: auto;
+      }
+
+      #sha_temp_meta .sha_tile > div
+      {
+          margin-bottom: 12px;
+      }
+
+      /* global */
+
+      html, .container, body, .chat {
+      	max-width: 300px;
+      	max-height: 600px;
+      	height: 100%;
+      	width: 100%;
+      	margin: auto;
+        	position: relative;
+      }
+
+      .container {
+      	overflow: hidden;
+      }
+
+      .chat {
+      	display: flex;
+      	flex-direction: column;
+      	background: #f1f0e8;
+        padding: 20px;
+      }
+
+      .chat-r {
+      	display: flex;
+      }
+      .chat-r .sp {
+      	flex: 1;
+      }
+
+      .chat-l {
+      	display: flex;
+
+      }
+      .chat-l .sp {
+      	flex: 1;
+      }
+
+      .chat-footer {
+      	width: 100%;
+      	padding: 22px 17px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      	text-align: center;
+      }
+
+      .first-reply {
+          background: #00A3E0 !important;
+          color: white;
+      }
+
+      /* button */
+     .outer button{
+        background: #000000;
+        color: #f2f2f2;
+        outline: none;
+        border: none;
+        font-size: 15px;
+        z-index: 9;
+        cursor: pointer;
+      }
+
+      .outer span{
+        height: 55px;
+        width: 269px;
+        background: inherit;
+        position: absolute;
+        z-index: 8;
+        left: 0;
+        transform: translate(-2.5px,-2.5px);
+    }
+
+        .button span{
+        border-radius: 5px;
+        }
+
+        .outer span:nth-child(1){
+        filter: blur(3.5px);
+        }
+        .outer span:nth-child(2){
+        filter: blur(5px);
+        }
+        .outer{
+        background: linear-gradient(#00a3e0, #4cc9f9, #00a3e0);
+        animation: rotate 1.5s linear infinite;
+        }
+        @keyframes rotate {
+        0%{
+            back: hue-rotate(0deg);
+        }
+        25%{
+            back: hue-rotate(7.5deg);
+        }
+        50%{
+            back: hue-rotate(15deg);
+        }
+        75%{
+            back: hue-rotate(22.5deg);
+        }
+        100%{
+            filter: hue-rotate(30deg);
+        }
+            }
+
+      /* end */
+    
+      .bg {
+          position: absolute;
+          top: 0;
+          z-index: 0;
+          display: none;
+      }
+
+      .bg img {
+          position: absolute;
+          top: 0;
+      }
+
+      .bgon {
+          width: 300px;
+          height: 600px;
+          position: absolute;
+          top: 0;
+          z-index: 0;
+          display: block;
+          background:url("assets/bg/BG1.jpg") rgba(0, 0, 0, 0.54);
+          background-size:cover;
+          background-blend-mode: multiply;
+      }
+
+      .content {
+          z-index: 9;
+          position: absolute;
+          bottom: 0;
+      }
+
+      button {
+      	cursor: pointer;
+      	padding: 15px;
+      	border-radius: 5px;
+      	font-size: 14px;
+      	color: white;
+      	z-index: 9;
+      	position: relative;
+      	transition: 0.3s ease;
+        color: #ffffff;
+        outline: none !important;
+        width: 265px;
+        line-height: 1.3;
+        background-color: #000000;
+      }
+
+      button.ready {
+        box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), -6px -6px 10px -1px rgba(255,255,255,0.7);
+        border: 1px solid rgba(0,0,0,0.0);
+      }
+
+      .pressed {
+        box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2), inset -4px -4px 6px -1px rgba(0,0,0,0.7), -0.5px -0.5px 0 rgba(0,0,0,1), 0.5px 0.5px 0 rgba(0,0,0,0.15), 0px 12px 10px -10px rgba(0,0,0,0.05) !important;
+        border: 1px solid rgba(0,0,0,0.01) !important;
+      }
+
+      a {
+      	cursor: pointer;
+      }
+
+     .pig a {
+       display: block;
+       width: 300px !important;
+       height: 48px !important;
+     }
+
+      .third-after {
+      	flex-direction: column;
+      }
+
+      .button-select-group {
+      	margin: 0 auto;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .button-select-group > button {
+        width: 88%;
+        font-size: 14px;
+      }
+
+      #sha_temp_body .sha_temp:before
+      {
+          position: absolute;
+          content: '';
+          display: block;
+          width: 88%;
+          height: 88%;
+          border-radius: inherit;
+          left: 50%;
+          top: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                      inset -4px -4px 6px -1px rgba(255,255,255,0.7);
+      }
+
+      #sha_temp_body .sha_temp:after
+      {
+          position: absolute;
+          content: '';
+          display: block;
+          width: 78%;
+          height: 78%;
+          border-radius: inherit;
+          left: 50%;
+          top: 50%;
+          background-color: rgba(0,0,0,0.025);
+          border: 1px solid rgba(0,0,0,0.01);
+          transform: translateX(-50%) translateY(-50%);
+          box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                      inset -4px -4px 6px -1px rgba(255,255,255,0.7);
+      }
+
+      .home-button {
+        cursor: pointer;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .home-modal {
+        width: 300px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        z-index: 999;
+        background-color: #e3edf7;
+        padding: 23px 25px;
+      }
+
+      .home-modal li {
+        width: 230px;
+      }
+
+      .home-modal .close-modal {
+        order: 2;
+      }
+
+      .home-modal .close-modal i {
+        font-size: 20px;
+        cursor: pointer;
+        padding: 10px;
+        color: #fdfdfdc4;
+      }
+
+      .restart {
+        cursor: pointer;
+        padding: 5px;
+        font-size: 12px;
+        color: #140757c4;
+        box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                    -6px -6px 10px -1px rgba(255,255,255,0.7);
+        border: 1px solid rgba(0,0,0,0.0);
+        padding: 10px;
+        border-radius: 12px;
+        order: 1;
+      }
+
+      .restart i {
+        margin-right: 5px;
+      }
+
+      .home-modal h5 {
+        font-size: 18px;
+        text-align: center;
+        font-weight: bold;
+        margin: 30px 30px 25px;
+        width: 200px;
+      }
+
+      .restart-convo {
+        justify-content: center;
+        margin-top: 28px;
+      }
+
+      .modal-controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .home-modal ul {
+        list-style: none;
+        padding: 0 !important;
+      }
+
+      .home-modal li a {
+        color: #000000;
+        margin-bottom: 18px;
+        display: inline-block;
+        text-decoration: none;
+        font-size: 15px;
+        box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), -6px -6px 10px -1px rgba(255,255,255,0.7);
+        border: 1px solid rgba(0,0,0,0.0);
+        padding: 10px;
+        border-radius: 12px;
+        width: 75%;
+        text-align: center;
+        transition: 0.2s all;
+        text-transform: uppercase;
+      }
+
+      .home-modal li a:hover {
+        background-color: #f5f5f5;
+      }
+
+      .cta:hover {
+        background-color: #f5f5f5;
+      }
+
+      .sha_tile:not(.user) {
+          position: relative;
+          right: 10px;
+      }
+
+      .sha_tile.user {
+          position: relative;
+          left: 10px;
+      }
+
+      /* Colour picker */
+
+      .imgBox img {
+         position: absolute;
+	     display: block;
+}
+
+
+
+
+
+
+
+
+
+/* form styles */
+
+.form-wrapper {
+  position: absolute;
+  top: 0;
+}
+
+.form-section {
+	height: 100%;
+	overflow: hidden;
+	width: 100%;
+	color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    background: #F7F7F7;
+}
+
+form {
+	padding: 15px 40px 40px;
+	background-color: #F7F7F7;
+}
+
+.form-logo {
+    width: 100px;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+form label {
+	margin: 0 auto 15px;
+	display: block;
+    font-weight: 600;
+    
+}
+
+select#dealer {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 400;
+    font-size: 16 !important;
+}
+
+form input {
+	width: 95%;
+	padding: 0px;
+	height: 27px;
+}
+
+form select {
+	width: 96%;
+	padding: 0px;
+    height: 32px;
+}
+
+form span {
+	margin: 5px 0;
+	display: block;
+	font-size: 14px;
+    font-weight: 400;
+    color: black;
+}
+
+form .send-button {
+    margin-top: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 14px;
+    color: white;
+    z-index: 9;
+    position: relative;
+    transition: 0.3s ease;
+    color: #ffffff;
+    width: 160px;
+    height: 45px;
+    line-height: 1.3;
+    background-color: #000000;
+    font-family: 'Poppins', sans-serif !important;
+    border-width: none !important;
+    border-style: none !important;
+}
+
+.form-section  h3 {
+	text-align: center;
+    margin-bottom: 0px;
+    margin-top: 100px;
+    font-size: 26px;
+    letter-spacing: 1px;
+    color: #ADAEB2 !important;
+    font-weight: 800;
+}
+
+.thankyou {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 0;
+}
+
+.thank {
+    color: black;
+    width: 300px;
+    text-align: center;
+}
+
+
+.you {
+    width: 250px;
+    color: #ADAEB2;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    font-weight: 400;
+}
+
+    </style>
+
+      </style>
+
+    </head>
+    <body>
+
+        <div class="container-fluid container">
+        
+          <!-- Main Chat -->
+         
+          <div class="bgon">
+            <img src="assets/bg/LIGHTS.png" class="switchon" style="display: none;">
+        </div>
+         
+<div id="sha_app" class="row hide-after">
+  <section id="sha_button_list" class="col-12">
+    <div class="row">
+      <div class="col-12">
+        <ul>
+          <li class="off">
+            <span class="home-button">
+             <img src="assets/logo/logoblack.png">
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="sha_temp_meta" class="col-12">
+    <div class="col-12 sha_tile">
+      <div class="chat-l first">
+        <span class="tile_icon"></span>
+        <div class="mess">
+          <p>Hi there. I'm the Peugeot Virtual Assistant.</p>
+        </div>
+        <div class="sp"></div>
+      </div>
+    </div>
+    <div class="col-12 sha_tile">
+      <div class="chat-l first1">
+        <span class="tile_icon"></span>
+        <div class="mess">
+          <p>Did you know that the new Peugeot 208 looks great in any colour?</p>
+        </div>
+        <div class="sp"></div>
+      </div>
+    </div>
+    <div class="col-12 sha_tile user">
+      <div class="chat-r first-reply">
+        <span class="tile_icon"></span>
+        <div class="sp"></div>
+        <div class="mess mess-r">
+          <p>This I've got to see for myself!</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="chat-l restart-convo">
+        <span class="tile_icon"></span>
+        <div class="mess">
+          <span class="restart"><i class="fas fa-undo"></i>Restart</span>
+          <div class="sp"></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 sha_tile">
+      <div class="chat-l second">
+        <span class="tile_icon"></span>
+        <div class="mess">
+          <p>No problem! Ready to choose your favourite colour?</p>
+          <div class="sp"></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 sha_tile user">
+      <div class="chat-r second-reply">
+        <span class="tile_icon"></span>
+        <div class="sp"></div>
+        <div class="mess mess-r">
+          <p>I'm ready!</p>
+        </div>
+      </div>
+    </div>
+    <div class="chat-footer">
+      <div class="button-select-group">
+        <div class="outer button">
+        <button class="first-button" type="button">This I've got to see for myself!</button>
+        <span></span>
+        <span></span>
+    </div>
+      </div>
+      <div class="button-select-group second">
+        <button class="s-select-button-1" type="button">I'm ready!</button>
+      </div>
+    </div>
+  </section>
+</div>
+
+        <!-- End Main Chat -->
+
+        <div class="container hide-before">
+            
+          <img src="/img/TOPCOLOURS.jpg" class="top">
+          <img src="/img/LOGO.png" class="logoo">
+          <div class="card" style="display: block;">
+              <span style="--i:0;"></span>
+              <img src="img/Yellow/Yellow0.png">
+              <span style="--i:1;"></span>
+              <img src="img/Yellow/Yellow1.png">
+              <span style="--i:2;"></span>
+              <img src="img/Yellow/Yellow2.png">
+              <span style="--i:3;"></span>
+              <img src="img/Yellow/Yellow3.png">
+              <span style="--i:4;"></span>
+              <img src="img/Yellow/Yellow4.png">
+              <span style="--i:5;"></span>
+              <img src="img/Yellow/Yellow5.png">
+              <span style="--i:6;"></span>
+              <img src="img/Yellow/Yellow6.png">
+              <span style="--i:7;"></span>
+              <img src="img/Yellow/Yellow7.png">
+              <span style="--i:8;"></span>
+              <img src="img/Yellow/Yellow8.png">
+              <span style="--i:9;"></span>
+              <img src="img/Yellow/Yellow9.png">
+              <span style="--i:10;"></span>
+              <img src="img/Yellow/Yellow10.png">
+              <span style="--i:11;"></span>
+              <img src="img/Yellow/Yellow11.png">
+              <span style="--i:12;"></span>
+              <img src="img/Yellow/Yellow12.png">
+          </div>
+  
+          <div class="card-blue" style="display: none;">
+              <span style="--i:0;"></span>
+              <img src="img/Blue/Blue0.png">
+              <span style="--i:1;"></span>
+              <img src="img/Blue/Blue1.png">
+              <span style="--i:2;"></span>
+              <img src="img/Blue/Blue2.png">
+              <span style="--i:3;"></span>
+              <img src="img/Blue/Blue3.png">
+              <span style="--i:4;"></span>
+              <img src="img/Blue/Blue4.png">
+              <span style="--i:5;"></span>
+              <img src="img/Blue/Blue5.png">
+              <span style="--i:6;"></span>
+              <img src="img/Blue/Blue6.png">
+              <span style="--i:7;"></span>
+              <img src="img/Blue/Blue7.png">
+              <span style="--i:8;"></span>
+              <img src="img/Blue/Blue8.png">
+              <span style="--i:9;"></span>
+              <img src="img/Blue/Blue9.png">
+              <span style="--i:10;"></span>
+              <img src="img/Blue/Blue10.png">
+              <span style="--i:11;"></span>
+              <img src="img/Blue/Blue11.png">
+              <span style="--i:12;"></span>
+              <img src="img/Blue/Blue12.png">
+          </div>
+  
+          <div class="card-silver" style="display: none;">
+              <span style="--i:0;"></span>
+              <img src="img/ArtenseGrey/ArtenseGrey0.png">
+              <span style="--i:1;"></span>
+              <img src="img/ArtenseGrey/ArtenseGrey1.png">
+              <span style="--i:2;"></span>
+              <img src="img/ArtenseGrey/ArtenseGrey2.png">
+              <span style="--i:3;"></span>
+              <img src="img/ArtenseGrey/ArtenseGrey3.png">
+              <span style="--i:4;"></span>
+              <img src="img/ArtenseGrey/ArtenseGrey4.png">
+              <span style="--i:5;"></span>
+              <img src="img/ArtenseGrey/ArtenseGrey5.png">
+              <span style="--i:6;"></span>
+              <img src="img/ArtenseGrey/ArtenseGrey6.png">
+              <span style="--i:7;"></span>
+              <img src="img/ArtenseGrey/ArtenseGrey7.png">
+              <span style="--i:8;"></span>
+              <img src="img/ArtenseGrey/ArtenseGrey8.png">
+              <span style="--i:9;"></span>
+              <img src="img/ArtenseGrey/ArtenseGrey9.png">
+              <span style="--i:10;"></span>
+              <img src="img/ArtenseGrey/ArtenseGrey10.png">
+              <span style="--i:11;"></span>
+              <img src="img/ArtenseGrey/ArtenseGrey11.png">
+              <span style="--i:12;"></span>
+              <img src="img/ArtenseGrey/ArtenseGrey12.png">
+          </div>
+  
+          <div class="card-white" style="display: none;">
+              <span style="--i:0;"></span>
+              <img src="img/White/White0.png">
+              <span style="--i:1;"></span>
+              <img src="img/White/White1.png">
+              <span style="--i:2;"></span>
+              <img src="img/White/White2.png">
+              <span style="--i:3;"></span>
+              <img src="img/White/White3.png">
+              <span style="--i:4;"></span>
+              <img src="img/White/White4.png">
+              <span style="--i:5;"></span>
+              <img src="img/White/White5.png">
+              <span style="--i:6;"></span>
+              <img src="img/White/White6.png">
+              <span style="--i:7;"></span>
+              <img src="img/White/White7.png">
+              <span style="--i:8;"></span>
+              <img src="img/White/White8.png">
+              <span style="--i:9;"></span>
+              <img src="img/White/White9.png">
+              <span style="--i:10;"></span>
+              <img src="img/White/White10.png">
+              <span style="--i:11;"></span>
+              <img src="img/White/White11.png">
+              <span style="--i:12;"></span>
+              <img src="img/White/White12.png">
+          </div>
+  
+          <div class="card-plat" style="display: none;">
+              <span style="--i:0;"></span>
+              <img src="img/PlatinumGrey/PlatinumGrey0.png">
+              <span style="--i:1;"></span>
+              <img src="img/PlatinumGrey/PlatinumGrey1.png">
+              <span style="--i:2;"></span>
+              <img src="img/PlatinumGrey/PlatinumGrey2.png">
+              <span style="--i:3;"></span>
+              <img src="img/PlatinumGrey/PlatinumGrey3.png">
+              <span style="--i:4;"></span>
+              <img src="img/PlatinumGrey/PlatinumGrey4.png">
+              <span style="--i:5;"></span>
+              <img src="img/PlatinumGrey/PlatinumGrey5.png">
+              <span style="--i:6;"></span>
+              <img src="img/PlatinumGrey/PlatinumGrey6.png">
+              <span style="--i:7;"></span>
+              <img src="img/PlatinumGrey/PlatinumGrey7.png">
+              <span style="--i:8;"></span>
+              <img src="img/PlatinumGrey/PlatinumGrey8.png">
+              <span style="--i:9;"></span>
+              <img src="img/PlatinumGrey/PlatinumGrey9.png">
+              <span style="--i:10;"></span>
+              <img src="img/PlatinumGrey/PlatinumGrey10.png">
+              <span style="--i:11;"></span>
+              <img src="img/PlatinumGrey/PlatinumGrey11.png">
+              <span style="--i:12;"></span>
+              <img src="img/PlatinumGrey/PlatinumGrey12.png">
+          </div>
+  
+          <div class="card-red" style="display: none;">
+              <span style="--i:0;"></span>
+              <img src="img/Red/Red0.png">
+              <span style="--i:1;"></span>
+              <img src="img/Red/Red1.png">
+              <span style="--i:2;"></span>
+              <img src="img/Red/Red2.png">
+              <span style="--i:3;"></span>
+              <img src="img/Red/Red3.png">
+              <span style="--i:4;"></span>
+              <img src="img/Red/Red4.png">
+              <span style="--i:5;"></span>
+              <img src="img/Red/Red5.png">
+              <span style="--i:6;"></span>
+              <img src="img/Red/Red6.png">
+              <span style="--i:7;"></span>
+              <img src="img/Red/Red7.png">
+              <span style="--i:8;"></span>
+              <img src="img/Red/Red8.png">
+              <span style="--i:9;"></span>
+              <img src="img/Red/Red9.png">
+              <span style="--i:10;"></span>
+              <img src="img/Red/Red10.png">
+              <span style="--i:11;"></span>
+              <img src="img/Red/Red11.png">
+              <span style="--i:12;"></span>
+              <img src="img/Red/Red12.png">
+          </div>
+  
+          <div class="card-black" style="display: none;">
+              <span style="--i:0;"></span>
+              <img src="img/Black/PearlBlack0.png">
+              <span style="--i:1;"></span>
+              <img src="img/Black/PearlBlack1.png">
+              <span style="--i:2;"></span>
+              <img src="img/Black/PearlBlack2.png">
+              <span style="--i:3;"></span>
+              <img src="img/Black/PearlBlack3.png">
+              <span style="--i:4;"></span>
+              <img src="img/Black/PearlBlack4.png">
+              <span style="--i:5;"></span>
+              <img src="img/Black/PearlBlack5.png">
+              <span style="--i:6;"></span>
+              <img src="img/Black/PearlBlack6.png">
+              <span style="--i:7;"></span>
+              <img src="img/Black/PearlBlack7.png">
+              <span style="--i:8;"></span>
+              <img src="img/Black/PearlBlack8.png">
+              <span style="--i:9;"></span>
+              <img src="img/Black/PearlBlack9.png">
+              <span style="--i:10;"></span>
+              <img src="img/Black/PearlBlack10.png">
+              <span style="--i:11;"></span>
+              <img src="img/Black/PearlBlack11.png">
+              <span style="--i:12;"></span>
+              <img src="img/Black/PearlBlack12.png">
+          </div>
+          <div class="blockz">
+            <ul class="color-swatch" style="opacity: 1;">
+                <li id="black" class="hold"> <img src="/img/BLACK.jpg"> </li>
+                <li id="plat" class="hold"> <img src="/img/GREY.jpg"> </li>
+                <li id="blue" class="hold"> <img src="/img/BLUE.jpg" > </li>
+                <li id="silver" class="hold"> <img src="/img/SILVER.jpg"> </li>
+                <li id="red" class="hold"> <img src="/img/RED.jpg"> </li>
+                <li id="white" class="hold"><img src="/img/WHITE.jpg"></li>
+                <li id="yellow" class="hold"><img src="/img/YELLOW.jpg"></li>
+                
+              </ul>
+            </div>
+            <a class="formbutton"><img src=""></a>
+      </div>
+  
+  
+      
+        </div>
+
+        </div>
+
+        <div style="display: none;" class="form-wrapper container">
+          <div class="form-section">
+                    <!-- Menu Modal -->
+                    <img src="assets/logo/logoblack.png" class="form-logo">
+                    <h3 style="color: black;">GET IN TOUCH</h3>
+                    <form action="https://peugeotsouthafrica.co.za/bitrix_rest/ap_gd.php" method="post">
+                      <label id="label_1" class="gwd-label-lyrs"><span>Name</span>
+                        <input class="name" type="text" name="Name" id="Name" required="">
+                      </label>
+                      <label id="label_2" class="gwd-label-1llz"><span>Surname</span>
+                        <input class="surname" type="text" name="Surname" id="Surname" required="">
+                      </label>
+                      <label id="label_3" class="gwd-label-1kkf"><span>Email</span>
+                        <input class="email" type="email" name="Email" id="Email" required="" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,8}$">
+                      </label>
+                      <label id="label_4" class="gwd-label-1agg"><span>Number</span>
+                        <input class="tel" type="tel" name="Number" id="Number" required="">
+                      </label>
+                      <label id="label_5" class="gwd-label-3qjh"><span>Dealership</span>
+                        <select id="dealer" required="" name="dealer">
+                          <option value=""> Please Select </option>
+                          <option value="PS013"> Peugeot East Rand </option>
+                          <option value="PS026"> Peugeot Durban </option>
+                          <option value="WV021"> Peugeot White River </option>
+                          <option value="PS005"> Peugeot Fourways </option>
+                          <option value="WV035"> Peugeot Menlyn </option>
+                          <option value="PS008"> Peugeot Northcliff </option>
+                          <option value="PS015"> Peugeot Springs </option>
+                          <option value="PS009"> Peugeot George </option>
+                          <option value="NMG007"> Peugeot Rivonia </option>
+                          <option value="WV019"> Peugeot Somerset west </option>
+                          <option value="PS003"> Peugeot Tygervalley </option>
+                          <option value="PS011"> Peugeot East London </option>
+                          <option value="PS012"> Peugeot Port Elizabeth </option>
+                          <option value="PS014"> Peugeot Pietermaritzburg </option>
+                          <option value="PS006"> Peugeot Pinetown </option>
+                          <option value="PS010"> Peugeot Richards Bay </option>
+                          <option value="PS007"> Peugeot Umhlanga </option>
+                          <option value="PS001"> Peugeot Bloemfontein </option>
+                          <option value="PS002"> Peugeot Welkom </option>
+                          <option value="WV012"> Peugeot Polokwane </option>
+                          <option value="WV011"> Peugeot Klerksdorp </option>
+                          <option value="WV017"> Peugeot Rustenburg </option>
+                          <option value="PS004"> Peugeot Middelburg </option>
+                          <option value="WV041"> Peugeot Nelspruit </option>
+                          <option value="PS019"> Peugeot Gaborone </option>
+                          <option value="PS016"> Peugeot Northgate - Eagle Canyon </option>
+                          <option value="PS021"> Peugeot Pretoria East </option>
+                          <option value="PS022"> Peugeot Kimberley </option>
+                          <option value="EV041"> Peugeot Witbank </option>
+                          <option value="PS023"> Peugeot The Glen </option>
+                          <option value="CF001"> Peugeot Roodepoort </option>
+                          <option value="PS024"> Peugeot Edenvale </option>
+                          <option value="PS025"> Peugeot Midrand </option>
+                          <option value="PS030"> Peugeot Shelly Beach </option>
+                          <option value="PS031"> Peugeot William Simpson </option>
+                          <option value="PS032"> Peugeot Cape Town </option>
+                        </select>
+                      </label>
+                      <a class="new-tab-submit" href="" target="_blank">
+                        <input class="send-button" type="submit" value="Send">
+                      </a>
+                    </form>
+                    <div class="thankyou" style="display: none;">
+                        <h1 class="thank">THANK YOU</h1>
+                        <h1 class="you"> someone will be in touch shortly</h1>
+                    </div>
+                  </div>
+    </div>
+
+        <script type="text/javascript">
+
+        $(document).ready(function() {
+            
+          $('.home-modal, .hide-before').hide();
+
+          $('.restart').click(function() {
+            location.reload();
+          });
+
+          $('.home-button').click(function() {
+            $('.home-modal').fadeIn();
+          });
+
+          $('.close-modal i').click(function() {
+            $('.home-modal').fadeOut();
+          });
+
+$('#black').click(function(){
+    $('.card').hide();
+    $('.card-silver').hide();
+    $('.card-blue').hide();
+    $('.card-plat').hide();
+    $('.card-red').hide();
+    $('.card-white').hide();
+    $('.card-black').show();
+});
+$('#plat').click(function(){
+    $('.card-blue').hide();
+    $('.card-red').hide();
+    $('.card-silver').hide();
+    $('.card').hide();
+    $('.card-black').hide();
+    $('.card-white').hide();
+    $('.card-plat').show();
+});
+$('#blue').click(function(){
+$('.card-plat').hide();
+    $('.card-red').hide();
+    $('.card-silver').hide();
+    $('.card').hide();
+    $('.card-black').hide();
+    $('.card-white').hide();
+    $('.card-blue').show();
+});
+$('#silver').click(function(){
+$('.card-plat').hide();
+    $('.card-red').hide();
+    $('.card-blue').hide();
+    $('.card').hide();
+    $('.card-black').hide();
+    $('.card-white').hide();
+    $('.card-silver').show();
+});
+$('#red').click(function(){
+$('.card-plat').hide();
+    $('.card-silver').hide();
+    $('.card-blue').hide();
+    $('.card').hide();
+    $('.card-black').hide();
+    $('.card-white').hide();
+    $('.card-red').show();
+});
+$('#white').click(function(){
+$('.card-plat').hide();
+    $('.card-silver').hide();
+    $('.card-blue').hide();
+    $('.card').hide();
+    $('.card-black').hide();
+    $('.card-red').hide();
+    $('.card-white').show();
+});
+$('#yellow').click(function(){
+$('.card-plat').hide();
+    $('.card-silver').hide();
+    $('.card-blue').hide();
+    $('.card-white').hide();
+    $('.card-black').hide();
+    $('.card-red').hide();
+    $('.card').show();
+
+
+});
+          // custom click functions
+
+          $.fn.hideButton = function () {
+            $this = $(this);
+            $this.click(function() {
+              setTimeout(function() {
+                $this.fadeOut(600);
+              }, 700);
+            });
+          };
+
+        $('button').hideButton();
+
+          $('button').click(function() {
+            $(this).addClass('pressed');
+          });
+
+          // Hide buttons & add ready class
+
+          $('.chat-l, .chat-r, button, .one, .two, .three, .four, .five, .outer.button').hide();
+          $('button').addClass('ready');
+
+          // Hide show buttons and messages after click
+
+          setTimeout(function () {
+            $('.first').fadeIn(600);
+          }, 1000);
+
+          setTimeout(function () {
+            $('.first1').fadeIn(600);
+          }, 2000);
+
+          setTimeout(function () {
+            $('.first-button, .outer.button').fadeIn(600);
+          }, 3000);
+
+
+          $('.first-button').click(function() {
+              $('.switchon').show();
+              
+              $('.outer.button').hide();
+            setTimeout(function() {
+              
+              $('.first-reply').fadeIn(600);
+            }, 1500);
+
+            setTimeout(function () {
+              $('.second').fadeIn(600);
+            }, 2500);
+
+            setTimeout(function () {
+              $('.s-select-button-1').fadeIn(600);
+              $('.outer.button').show();
+            }, 3500);
+
+          });
+          
+          $('.s-select-button-1, .three-acc').click(function() {
+            $('.hide-before').show();
+            $('.hide-after, .home-modal').hide();
+          });
+
+          $('.formbutton').click(function() {
+  $('.form-wrapper').show();
+  $('.hide-before').hide();
+});
+
+        // $('.send-button').click(function(){
+        //     $('.form, .form-section h3').hide(1000);
+        //     $('.thankyou').show(1000);
+        // })
+
+        });
+
+        </script>
+    </body>
+</html>
